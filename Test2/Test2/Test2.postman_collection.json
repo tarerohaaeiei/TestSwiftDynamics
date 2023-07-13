@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "501d5070-9e62-4ec8-9d07-f6b3a7aa493c",
+		"name": "Test2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28468051"
+	},
+	"item": [
+		{
+			"name": "Post&Update-Student-score",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Beth\",\r\n    \"last_name\": \"Jones\",\r\n    \"subject_title\": \"Math\",\r\n    \"score\": 56.55\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/student_score/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student_score",
+						""
+					],
+					"query": [
+						{
+							"key": "first_name",
+							"value": "Beth",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Jones",
+							"disabled": true
+						},
+						{
+							"key": "subject_title",
+							"value": "Math",
+							"disabled": true
+						},
+						{
+							"key": "score",
+							"value": "55.55",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Student-Score-By-ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/student_score/110",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student_score",
+						"110"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-School-By-title-School",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/personnel_details/Dorm%20Palace%20School/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"personnel_details",
+						"Dorm%20Palace%20School",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-school_hierarchy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/school_hierarchy/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"school_hierarchy",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-school_structure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/school_structure/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"school_structure",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
